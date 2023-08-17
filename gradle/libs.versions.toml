@@ -1,0 +1,507 @@
+# === VERSIONS BLOCK === #
+[versions]
+
+callisto = "0.7.0-SNAPSHOT"
+
+## Spring Versions ##
+spring-data-mongodb = { strictly = "[3.3, 4.0[", prefer = "3.4.3" } # Spring Data MongoDB | https://github.com/spring-projects/spring-data-mongodb
+spring-data-r2dbc = { strictly = "[1.4, 2.0[", prefer = "1.5.3" } # Spring Data R2DBC | https://github.com/spring-projects/spring-data-r2dbc
+spring-data-jdbc = { strictly = "[2.3, 3.0[", prefer = "2.4.3" } # Spring Data JDBC | https://github.com/spring-projects/spring-data-jdbc
+spring-data = { strictly = "[2.6, 3.0[", prefer = "2.7.3" } # Spring Data Core | https://github.com/spring-projects/spring-data-commons
+spring-boot = { strictly = "[2.6, 3.0[", prefer = "2.7.4" } # Spring Boot | https://github.com/spring-projects/spring-boot
+spring-kafka = { strictly = "[2.8, 3.0[", prefer = "2.9.1" } # Spring Kafka | https://github.com/spring-projects/spring-kafka
+spring-batch = { strictly = "[4.3, 5.0[", prefer = "4.3.7" } # Spring Batch | https://github.com/spring-projects/spring-batch
+spring-retry = { strictly = "[1.3, 2.0[", prefer = "1.3.3" } # Spring Retry | https://github.com/spring-projects/spring-retry
+spring = { strictly = "[5.3, 5.4[", prefer = "5.3.23" } # Spring Framework | https://github.com/spring-projects/spring-framework
+
+## Apache Versions ##
+apache-spark = { strictly = "[3.2, 4.0[", prefer = "3.3.0" } # Unified Analytics Engine | https://github.com/apache/spark
+apache-kafka = { strictly = "[3.0, 4.0[", prefer = "3.3.1" } # Distributed event streaming platform | https://github.com/apache/kafka
+apache-hadoop = { strictly = "[3.3, 4.0[", prefer = "3.3.4" } # Framework for distributed processing | https://github.com/apache/hadoop
+
+
+## Standard Versions ##
+springfox = { require = "[3.0, 4.0[", prefer = "3.0.0" } # Spring Automated JSON API documentation | https://github.com/springfox/springfox
+liquibase = { strictly = "[4.10, 5.0[", prefer = "4.16.1" } # Library for Tracking, Managing and Applying Databaseschema Changes | https://github.com/liquibase/liquibase
+flyway = { strictly = "[9.0, 10.0[", prefer = "9.4.0" } # Database Migrations | https://github.com/flyway/flyway
+
+jasperreports = { strictly = "[6.19, 7.0[", prefer = "6.20.0" } # Reporting Library | https://github.com/TIBCOSoftware/jasperreports
+
+caffeine = { strictly = "[3.0, 4.0[", prefer = "3.1.1" } # Caching Library | https://github.com/ben-manes/caffeine
+
+logback = { strictly = "[1.2, 2.0[", prefer = "1.4.3" } # Java Logging Framework | https://github.com/qos-ch/logback
+log4j2 = { strictly = "[2.17, 3.0[", prefer = "2.19.0" } # Java Logging Framework | https://github.com/apache/logging-log4j2
+slf4j = { strictly = "[2.0, 3.0[", prefer = "2.0.3" } # The Simple Logging Facade for Java (SLF4J) | https://github.com/qos-ch/slf4j
+
+hibernate = "5.6.12.Final" # Hibernate Object/Relational Mapping | https://github.com/hibernate/hibernate-orm
+
+
+## Jakarta Versions ##
+jakarta-persistence-api = { strictly = "[2.2, 3.0[", prefer = "2.2.3" } # Persistence Object/Relational Mapping | https://github.com/eclipse-ee4j/jpa-api
+jakarta-xmlBind-api = { strictly = "[3.0, 4.0[", prefer = "3.0.1" } # Jakarta XML Binding API | https://github.com/eclipse-ee4j/jaxb-api
+jakarta-xmlBind-jaxbRi = { strictly = "[3.0, 4.0[", prefer = "3.0.2" } # Jakarta XML Binding Implementation | https://github.com/eclipse-ee4j/jaxb-ri
+
+
+## Project Reactor Libraries | https://github.com/reactor/reactor ##
+reactor-kotlin = { strictly = "[1.1, 1.2[", prefer = "1.1.7" } # Reactor Kotlin Extensions | https://github.com/reactor/reactor-kotlin-extensions
+reactor-netty = { strictly = "[1.0, 1.1[", prefer = "1.0.23" } # Reactor Netty | https://github.com/reactor/reactor-netty
+reactor-core = { strictly = "[3.4, 3.5[", prefer = "3.4.23" } # Reactor Kotlin Extensions | https://github.com/reactor/reactor-core
+
+
+## Jackson Versions | https://github.com/FasterXML/jackson ##
+jackson-woodstox = { strictly = "[6.2, 6.4[", prefer = "6.3.1" } # Stax XML API implementation | https://github.com/FasterXML/woodstox
+jackson = { strictly = "[2.13, 2.14[", prefer = "2.13.4" } # Java JSON/XML Processor | https://github.com/FasterXML/jackson
+
+
+## Language Specific Versions ##
+exposed = { strictly = "[0.38, 1.0[", prefer = "0.39.2" } # Kotlin SQL Framework | https://github.com/JetBrains/Exposed
+kotlinSparkApi = { strictly = "[1.2, 2.0[", prefer = "1.2.1" } # Kotlin bindings for Apache Spark | https://github.com/Kotlin/kotlin-spark-api
+kotlinLogging = { strictly = "[2.1, 2.2[", prefer = "3.0.0" } # Kotlin Logging Framework | https://github.com/MicroUtils/kotlin-logging
+benasher44Uuid = { strictly = "[0.4, 1.0[", prefer = "0.5.0" } # Kotlin Multiplatform UUID | https://github.com/benasher44/uuid
+arrow = { strictly = "[1.0, 2.0[", prefer = "1.1.3" } # Functional companion to Kotlin's Standard Library | https://github.com/arrow-kt/arrow
+kotlinx-coroutines = { strictly = "[1.6, 1.7[", prefer = "1.6.4" } # Kotlin Coroutines Support | https://github.com/Kotlin/kotlinx.coroutines
+kotlin = "1.7.10" # Kotlin, Programming Language | https://github.com/JetBrains/kotlin
+
+scala = { strictly = "2.13.9", prefer = "2.13.9" } # Scala, Programming Language | https://github.com/scala/scala
+
+groovy = { strictly = "[4.0, 5.0[", prefer = "4.0.5" } # Groovy Programming Language | https://github.com/apache/groovy
+
+reflections = { strictly = "[0.10, 1.0[", prefer = "0.10.2" } # Java runtime metadata analysis | https://github.com/ronmamo/reflections
+
+jdbcDrivers-postgresql = { strictly = "[42.3, 42.6[", prefer = "42.5.0" } # Postgresql JDBC Driver | https://github.com/pgjdbc/pgjdbc
+jdbcDrivers-h2 = { strictly = "[2.1, 3.0[", prefer = "2.1.214" } # Embeddable RDBMS | https://github.com/h2database/h2database
+java = "11" # Java Programming Language | https://github.com/openjdk/jdk
+
+
+## Test Versions ##
+mockserver = { strictly = "[5.13, 6.0[", prefer = "5.14.0" } # Mock HTTP Server| https://github.com/mock-server/mockserver
+testcontainers = { strictly = "[1.17, 2.0[", prefer = "1.17.5" } # Java library runninglightweight instances in Docker | https://github.com/testcontainers/testcontainers-java
+junit-jupiter = { strictly = "[5.8, 6.0[", prefer = "5.9.1" } # Java Unit Testing Framework | https://github.com/junit-team/junit5
+mockk = { strictly = "[1.12, 2.0[", prefer = "1.13.2" } # Kotlin Mocking Library | https://github.com/mockk/mockk
+
+kotest-extensions-allure = { strictly = "[1.1, 2.0[", prefer = "1.2.0" } # Kotest extensions for Allure Test Reporting | https://github.com/kotest/kotest-extensions-allure
+kotest-extensions-testcontainers = { strictly = "[1.3, 2.0[", prefer = "1.3.4" } # Kotest extensions for test containers | https://github.com/kotest/kotest-extensions-testcontainers
+kotest-extensions-embeddedKafka = { strictly = "[1.0, 2.0[", prefer = "1.0.6" } # Kotest extension for embedded kafka instances | https://github.com/kotest/kotest-extensions-embedded-kafka
+kotest-extensions-mockserver = { strictly = "[1.1, 2.0[", prefer = "1.2.1" } # Kotest extensions for MockServer | https://github.com/kotest/kotest-extensions-mockserver
+kotest-extensions-spring = { strictly = "[1.1, 2.0[", prefer = "1.1.2" } # Kotest extension for Spring framework | https://github.com/kotest/kotest-extensions-spring
+kotest-extensions-assertionsCompiler = { strictly = "[1.0, 2.0[", prefer = "1.0.0" } # Kotest assertions wrapping kotlin-compile-testing | https://github.com/kotest/kotest-assertions-compiler
+kotest-extensions-assertionsKtor = { strictly = "[1.0, 2.0[", prefer = "1.0.3" } # Kotest assertions for Jetbrain's Ktor | https://github.com/kotest/kotest-assertions-ktor
+kotest-extensions-assertionsArrow = { strictly = "[1.2, 2.0[", prefer = "1.2.5" } # Kotest extensions for Arrow | https://github.com/kotest/kotest-extensions-arrow
+kotest-extensions-assertionsKotlinxDatetime = { strictly = "[1.0, 2.0[", prefer = "1.0.1" } # Kotest assertions library for kotlinx date time | https://github.com/kotest/kotest-assertions-kotlinx-datetime
+kotest = { strictly = "[5.3, 6.0[", prefer = "5.5.0" } # Test framework for Kotlin | https://github.com/kotest/kotest
+
+## Plugin Versions ##
+gradle-plugins-ksp = "1.7.10-1.0.6" # Kotlin Symbol Processing API | https://github.com/google/ksp
+gradle-plugins-dokka = { strictly = "[1.7, 1.8[", prefer = "1.7.10" } # Kotlin Documentation Engine | https://github.com/Kotlin/dokka
+gradle-plugins-ktlint = { strictly = "[0.46, 1.0[", prefer = "0.47.1" } # Kotlin Linter | https://github.com/pinterest/ktlint
+gradle-plugins-spotless = { strictly = "[6.9, 7.0[", prefer = "6.11.0" } # Formatting Plugins | https://github.com/diffplug/spotless/tree/main/plugin-gradle
+gradle-plugins-detekt = { strictly = "[1.21, 2.0[", prefer = "1.21.0" } # Static code analysis for Kotlin | https://github.com/detekt/detekt
+
+gradle-plugins-binaryCompatibilityValidator = { strictly = "[0.11, 1.0[", prefer = "0.11.1" } # Kotlin Binary Compatibility Validator | https://github.com/Kotlin/binary-compatibility-validator
+gradle-plugins-atomicfu = { strictly = "[0.18, 1.0[", prefer = "0.18.3" } # Kotlin Idiomatic Atomic Operations | https://github.com/Kotlin/kotlinx.atomicfu
+gradle-plugins-shadow = { strictly = "[7.1, 7.2[", prefer = "7.1.2" } # Plugin for fat/uber JARs with support of package relocation | https://github.com/johnrengelman/shadow
+
+gradle-plugins-kotlinx-benchmark = { strictly = "[0.4, 0.5[", prefer = "0.4.5" } # Toolkit for running benchmarks | https://github.com/Kotlin/kotlinx-benchmark
+gradle-plugins-kotlinx-kover = { strictly = "[0.5, 1.0[", prefer = "0.6.1" } # Gradle plugin for Kotlin code coverage agents | https://github.com/Kotlin/kotlinx-kover
+
+
+
+# === LIBRARIES BLOCK === #
+[libraries]
+
+## Callisto Libraries #
+callisto-blob-core = { module = "tyrell.callisto:blob-commons-core", version.ref = "callisto" }
+callisto-blob-filesystemExtension = { module = "tyrell.callisto:blob-filesystem-extension", version.ref = "callisto" }
+callisto-blob-hibernateExtension = { module = "tyrell.callisto:blob-hibernate-extension", version.ref = "callisto" }
+
+callisto-signal-core = { module = "tyrell.callisto:signal-commons-core", version.ref = "callisto" }
+callisto-signal-unix = { module = "tyrell.callisto:signal-commons-unix", version.ref = "callisto" }
+
+callisto-commons-app = { module = "tyrell.callisto:app-commons", version.ref = "callisto" }
+callisto-commons-api = { module = "tyrell.callisto:api-commons", version.ref = "callisto" }
+callisto-commons-hibernate = { module = "tyrell.callisto:hibernate-commons", version.ref = "callisto" }
+callisto-commons-data = { module = "tyrell.callisto:data-commons", version.ref = "callisto" }
+callisto-commons-base = { module = "tyrell.callisto:base-commons", version.ref = "callisto" }
+callisto-commons-test = { module = "tyrell.callisto:test-commons", version.ref = "callisto" }
+
+
+## Spring Boot Libraries ##
+spring-boot-starter-integration = { module = "org.springframework.boot:spring-boot-starter-integration", version.ref = "spring-boot" }
+spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator", version.ref = "spring-boot" }
+spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-starter-security", version.ref = "spring-boot" }
+spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux", version.ref = "spring-boot" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
+spring-boot-starter-data-r2dbc = { module = "org.springframework.boot:spring-boot-starter-data-r2dbc", version.ref = "spring-boot" }
+spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa", version.ref = "spring-boot" }
+spring-boot-starter-jdbc = { module = "org.springframework.boot:spring-boot-starter-jdbc", version.ref = "spring-boot" }
+spring-boot-starter-cache = { module = "org.springframework.boot:spring-boot-starter-cache", version.ref = "spring-boot" }
+spring-boot-starter-amqp = { module = "org.springframework.boot:spring-boot-starter-amqp", version.ref = "spring-boot" }
+spring-boot-starter-log4j2 = { module = "org.springframework.boot:spring-boot-starter-log4j2", version.ref = "spring-boot" }
+spring-boot-starter-logging = { module = "org.springframework.boot:spring-boot-starter-logging", version.ref = "spring-boot" }
+spring-boot-starter-json = { module = "org.springframework.boot:spring-boot-starter-json", version.ref = "spring-boot" }
+spring-boot-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation", version.ref = "spring-boot" }
+spring-boot-starter-aop = { module = "org.springframework.boot:spring-boot-starter-aop", version.ref = "spring-boot" }
+
+spring-boot-autoconfigure-actuator = { module = "org.springframework.boot:spring-boot-actuator-autoconfigure", version.ref = "spring-boot" }
+
+spring-boot-actuator = { module = "org.springframework.boot:spring-boot-actuator", version.ref = "spring-boot" }
+spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools", version.ref = "spring-boot" }
+
+spring-boot-autoconfigureProcessor = { module = "org.springframework.boot:spring-boot-autoconfigure-processor", version.ref = "spring-boot" }
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure", version.ref = "spring-boot" }
+spring-boot-configurationProcessor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "spring-boot" }
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "spring-boot" }
+spring-boot = { module = "org.springframework.boot:spring-boot", version.ref = "spring-boot" }
+
+
+## Spring Libraries ##
+spring-data-ldap = { module = "org.springframework.data:spring-data-ldap", version.ref = "spring-data" }
+spring-data-redis = { module = "org.springframework.data:spring-data-redis", version.ref = "spring-data" }
+spring-data-mongodb = { module = "org.springframework.data:spring-data-mongodb", version.ref = "spring-data-mongodb" }
+spring-data-jpa = { module = "org.springframework.data:spring-data-jpa", version.ref = "spring-data" }
+spring-data-r2dbc = { module = "org.springframework.data:spring-data-r2dbc", version.ref = "spring-data-r2dbc" }
+spring-data-jdbc = { module = "org.springframework.data:spring-data-jdbc", version.ref = "spring-data-jdbc" }
+spring-data-envers = { module = "org.springframework.data:spring-data-envers", version.ref = "spring-data" }
+spring-data-keyvalue = { module = "org.springframework.data:spring-data-keyvalue", version.ref = "spring-data" }
+spring-data-commons = { module = "org.springframework.data:spring-data-commons", version.ref = "spring-data" }
+
+spring-kafka = { module = "org.springframework.kafka:spring-kafka", version.ref = "spring-kafka" }
+spring-retry = { module = "org.springframework.retry:spring-retry", version.ref = "spring-retry" }
+
+spring-webflux = { module = "org.springframework:spring-webflux", version.ref = "spring" }
+spring-webmvc = { module = "org.springframework:spring-webmvc", version.ref = "spring" }
+spring-web = { module = "org.springframework:spring-web", version.ref = "spring" }
+spring-jdbc = { module = "org.springframework:spring-jdbc", version.ref = "spring" }
+
+spring-aspects = { module = "org.springframework:spring-aspects", version.ref = "spring" }
+spring-tx = { module = "org.springframework:spring-tx", version.ref = "spring" }
+spring-aop = { module = "org.springframework:spring-aop", version.ref = "spring" }
+spring-expression = { module = "org.springframework:spring-expression", version.ref = "spring" }
+
+spring-contextSupport = { module = "org.springframework:spring-context-support", version.ref = "spring" }
+spring-beans = { module = "org.springframework:spring-beans", version.ref = "spring" }
+spring-context = { module = "org.springframework:spring-context", version.ref = "spring" }
+spring-core = { module = "org.springframework:spring-core", version.ref = "spring" }
+
+
+## Apache Libraries ##
+apache-spark-sql = { module = "org.apache.spark:spark-sql_2.13", version.ref = "apache-spark" }
+apache-spark-sql-kafka = { module = "org.apache.spark:spark-sql-kafka-0-10_2.13", version.ref = "apache-spark" }
+apache-spark-core = { module = "org.apache.spark:spark-core_2.13", version.ref = "apache-spark" }
+apache-spark-repl = { module = "org.apache.spark:spark-repl_2.13", version.ref = "apache-spark" }
+apache-spark-streaming = { module = "org.apache.spark:spark-streaming_2.13", version.ref = "apache-spark" }
+apache-spark-streaming-kafka = { module = "org.apache.spark:spark-streaming-kafka-0-10-assembly_2.13", version.ref = "apache-spark" }
+
+apache-kafka-streams = { module = "org.apache.kafka:kafka-streams", version.ref = "apache-kafka" }
+apache-kafka-clients = { module = "org.apache.kafka:kafka-clients", version.ref = "apache-kafka" }
+
+apache-hadoop-minicluster = { module = "org.apache.hadoop:hadoop-minicluster", version.ref = "apache-hadoop" }
+apache-hadoop-mapreduce-clientCommon = { module = "org.apache.hadoop:hadoop-mapreduce-client-common", version.ref = "apache-hadoop" }
+apache-hadoop-client = { module = "org.apache.hadoop:hadoop-client", version.ref = "apache-hadoop" }
+apache-hadoop-hdfs = { module = "org.apache.hadoop:hadoop-hdfs", version.ref = "apache-hadoop" }
+apache-hadoop-aws = { module = "org.apache.hadoop:hadoop-aws", version.ref = "apache-hadoop" }
+apache-hadoop-common = { module = "org.apache.hadoop:hadoop-common", version.ref = "apache-hadoop" }
+
+
+## Standard Libraries ##
+springfox-bootStarter = { module = "io.springfox:springfox-boot-starter", version.ref = "springfox" }
+liquibase-core = { module = "org.liquibase:liquibase-core", version.ref = "liquibase" }
+flyway-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+
+jasperreports = { module = "net.sf.jasperreports:jasperreports", version.ref = "jasperreports" }
+jasperreports-functions = { module = "net.sf.jasperreports:jasperreports-functions", version.ref = "jasperreports" }
+jasperreports-fonts = { module = "net.sf.jasperreports:jasperreports-fonts", version.ref = "jasperreports" }
+jasperreports-annotationProcessors = { module = "net.sf.jasperreports:jasperreports-annotation-processors", version.ref = "jasperreports" }
+
+caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version.ref = "caffeine" }
+
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+logback-core = { module = "ch.qos.logback:logback-core", version.ref = "logback" }
+
+log4j2-web = { module = "org.apache.logging.log4j:log4j-web", version.ref = "log4j2" }
+log4j2-slf4jImpl = { module = "org.apache.logging.log4j:log4j-slf4j-impl", version.ref = "log4j2" }
+log4j2-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j2" }
+log4j2-jul = { module = "org.apache.logging.log4j:log4j-jul", version.ref = "log4j2" }
+log4j2-api = { module = "org.apache.logging.log4j:log4j-api", version.ref = "log4j2" }
+
+slf4j-binding-log4j12 = { module = "org.slf4j:slf4j-log4j12", version.ref = "slf4j" }
+slf4j-binding-nop = { module = "org.slf4j:slf4j-nop", version.ref = "slf4j" }
+slf4j-binding-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+
+hibernate-envers = { module = "org.hibernate:hibernate-envers", version.ref = "hibernate" }
+hibernate-core = { module = "org.hibernate:hibernate-core", version.ref = "hibernate" }
+hibernate-entitymanager = { module = "org.hibernate:hibernate-entitymanager", version.ref = "hibernate" }
+
+
+## Jakarta Libraries ##
+jakarta-persistence-api = { module = "jakarta.persistence:jakarta.persistence-api", version.ref = "jakarta-persistence-api" }
+jakarta-xmlBind-api = { module = "jakarta.xml.bind:jakarta.xml.bind-api", version.ref = "jakarta-xmlBind-api" }
+jakarta-xmlBind-jaxbRi = { module = "com.sun.xml.bind:jaxb-ri", version.ref = "jakarta-xmlBind-jaxbRi" }
+
+
+## Project Reactor Libraries ##
+reactor-core = { module = "io.projectreactor:reactor-core", version.ref = "reactor-core" }
+reactor-kotlin-extensions = { module = "io.projectreactor.kotlin:reactor-kotlin-extensions", version.ref = "reactor-kotlin" }
+reactor-reactor-netty = { module = "io.projectreactor.netty:reactor-netty", version.ref = "reactor-netty" }
+reactor-reactor-netty-core = { module = "io.projectreactor.netty:reactor-netty-core", version.ref = "reactor-netty" }
+reactor-reactor-netty-http = { module = "io.projectreactor.netty:reactor-netty-http", version.ref = "reactor-netty" }
+
+
+## Jackson Libraries ##
+jackson-module-parameterNames = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+
+jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8", version.ref = "jackson" }
+jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jackson" }
+jackson-datatype-hibernate5 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-hibernate5", version.ref = "jackson" }
+
+jackson-dataformat-xml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-xml", version.ref = "jackson" }
+jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "jackson" }
+jackson-dataformat-toml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-toml", version.ref = "jackson" }
+jackson-dataformat-properties = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-properties", version.ref = "jackson" }
+jackson-dataformat-csv = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-csv", version.ref = "jackson" }
+
+jackson-woodstox-core = { module = "com.fasterxml.woodstox:woodstox-core", version.ref = "jackson-woodstox" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+
+
+## Language Specific Libraries ##
+
+kotlinSparkApi = { module = "org.jetbrains.kotlinx.spark:kotlin-spark-api_3.3.0_2.13", version.ref = "kotlinSparkApi" }
+kotlinLogging-jvm = { module = "io.github.microutils:kotlin-logging-jvm", version.ref = "kotlinLogging" }
+benasher44Uuid = { module = "com.benasher44:uuid", version.ref = "benasher44Uuid" }
+benasher44Uuid-jvm = { module = "com.benasher44:uuid-jvm", version.ref = "benasher44Uuid" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-jdk9 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-jdk9", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-jdk8 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-reactor = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-reactor", version.ref = "kotlinx-coroutines" }
+
+kotlin-script-runtime = { module = "org.jetbrains.kotlin:kotlin-script-runtime", version.ref = "kotlin" }
+kotlin-script-util = { module = "org.jetbrains.kotlin:kotlin-script-util", version.ref = "kotlin" }
+kotlin-compilerEmbeddable = { module = "org.jetbrains.kotlin:kotlin-compiler-embeddable", version.ref = "kotlin" }
+
+kotlin-scripting-compilerEmbeddable = { module = "org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable", version.ref = "kotlin" }
+kotlin-scripting-common = { module = "org.jetbrains.kotlin:kotlin-scripting-common", version.ref = "kotlin" }
+kotlin-scripting-jvm = { module = "org.jetbrains.kotlin:kotlin-scripting-jvm", version.ref = "kotlin" }
+kotlin-scripting-jvmHost = { module = "org.jetbrains.kotlin:kotlin-scripting-jvm-host", version.ref = "kotlin" }
+kotlin-scripting-dependencies = { module = "org.jetbrains.kotlin:kotlin-scripting-dependencies", version.ref = "kotlin" }
+kotlin-scripting-dependenciesMaven = { module = "org.jetbrains.kotlin:kotlin-scripting-dependencies-maven", version.ref = "kotlin" }
+
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlin-testJunit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlin" }
+
+scala-library = { module = "org.scala-lang:scala-library", version.ref = "scala" }
+
+groovy-json = { module = "org.codehaus.groovy:groovy-json", version.ref = "groovy" }
+groovy-nio = { module = "org.codehaus.groovy:groovy-nio", version.ref = "groovy" }
+groovy-core = { module = "org.codehaus.groovy:groovy", version.ref = "groovy" }
+
+reflections = { module = "org.reflections:reflections", version.ref = "reflections" }
+
+jdbcDrivers-postgresql = { module = "org.postgresql:postgresql", version.ref = "jdbcDrivers-postgresql" }
+jdbcDrivers-h2 = { module = "com.h2database:h2", version.ref = "jdbcDrivers-h2" }
+
+### Exposed Libraries ###
+exposed = { module = "org.jetbrains.exposed:exposed", version.ref = "exposed" }
+exposed-bom = { module = "org.jetbrains.exposed:exposed-bom", version.ref = "exposed" }
+exposed-springBootStarter = { module = "org.jetbrains.exposed:exposed-spring-boot-starter", version.ref = "exposed" }
+exposed-springTransaction = { module = "org.jetbrains.exposed:spring-transaction", version.ref = "exposed" }
+exposed-dao = { module = "org.jetbrains.exposed:exposed-dao", version.ref = "exposed" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+exposed-money = { module = "org.jetbrains.exposed:exposed-money", version.ref = "exposed" }
+exposed-jodatime = { module = "org.jetbrains.exposed:exposed-jodatime", version.ref = "exposed" }
+exposed-datetime = { module = "org.jetbrains.exposed:exposed-kotlin-datetime", version.ref = "exposed" }
+exposed-javaTime = { module = "org.jetbrains.exposed:exposed-java-time", version.ref = "exposed" }
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+
+### Arrow Libraries ###
+arrow-optics-kspPlugin = { module = "io.arrow-kt:arrow-optics-ksp-plugin", version.ref = "arrow" }
+arrow-optics = { module = "io.arrow-kt:arrow-optics", version.ref = "arrow" }
+arrow-fx-stm = { module = "io.arrow-kt:arrow-fx-stm", version.ref = "arrow" }
+arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow" }
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+arrow-bom = { module = "io.arrow-kt:arrow-stack", version.ref = "arrow" }
+
+
+## Test Libraries ##
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+spring-boot-autoconfigure-test = { module = "org.springframework.boot:spring-boot-test-autoconfigure", version.ref = "spring-boot" }
+spring-boot-test = { module = "org.springframework.boot:spring-boot-test", version.ref = "spring-boot" }
+
+spring-kafka-test = { module = "org.springframework.kafka:spring-kafka-test", version.ref = "spring-kafka" }
+spring-batch-test = { module = "org.springframework.batch:spring-batch-test", version.ref = "spring-batch" }
+spring-test = { module = "org.springframework:spring-test", version.ref = "spring" }
+
+reactor-test = { module = "io.projectreactor:reactor-test", version.ref = "reactor-core" }
+
+apache-hadoop-test = { module = "org.apache.hadoop:hadoop-test", version = "1.2.1" }
+
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit-jupiter" }
+
+### Testcontainers Libraries ###
+testcontainers-elasticsearch = { module = "org.testcontainers:elasticsearch", version.ref = "testcontainers" }
+testcontainers-nginx = { module = "org.testcontainers:nginx", version.ref = "testcontainers" }
+testcontainers-mockserver = { module = "org.testcontainers:mockserver", version.ref = "testcontainers" }
+testcontainers-kafka = { module = "org.testcontainers:kafka", version.ref = "testcontainers" }
+testcontainers-rabbitmq = { module = "org.testcontainers:rabbitmq", version.ref = "testcontainers" }
+testcontainers-vault = { module = "org.testcontainers:vault", version.ref = "testcontainers" }
+testcontainers-cassandra = { module = "org.testcontainers:cassandra", version.ref = "testcontainers" }
+testcontainers-mongodb = { module = "org.testcontainers:mongodb", version.ref = "testcontainers" }
+testcontainers-trino = { module = "org.testcontainers:trino", version.ref = "testcontainers" }
+testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
+testcontainers-databaseCommons = { module = "org.testcontainers:database-commons", version.ref = "testcontainers" }
+testcontainers-jdbc = { module = "org.testcontainers:jdbc", version.ref = "testcontainers" }
+testcontainers-r2dbc = { module = "org.testcontainers:r2dbc", version.ref = "testcontainers" }
+testcontainers-junitJupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
+testcontainers-core = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
+
+### Kotest Libraries ###
+kotest-extensions-allure = { module = "io.kotest.extensions:kotest-extensions-allure", version.ref = "kotest-extensions-allure" }
+kotest-extensions-testcontainers = { module = "io.kotest.extensions:kotest-extensions-testcontainers", version.ref = "kotest-extensions-testcontainers" }
+kotest-extensions-embeddedKafka = { module = "io.kotest.extensions:kotest-extensions-embedded-kafka", version.ref = "kotest-extensions-embeddedKafka" }
+kotest-extensions-mockserver = { module = "io.kotest.extensions:kotest-extensions-mockserver", version.ref = "kotest-extensions-mockserver" }
+kotest-extensions-spring = { module = "io.kotest.extensions:kotest-extensions-spring", version.ref = "kotest-extensions-spring" }
+kotest-extensions-assertionsCompiler = { module = "io.kotest.extensions:kotest-assertions-compiler", version.ref = "kotest-extensions-assertionsCompiler" }
+kotest-extensions-assertionsKtor = { module = "io.kotest.extensions:kotest-assertions-ktor", version.ref = "kotest-extensions-assertionsKtor" }
+kotest-extensions-assertionsArrow = { module = "io.kotest.extensions:kotest-assertions-arrow", version.ref = "kotest-extensions-assertionsArrow" }
+kotest-extensions-assertionsKotlinxDatetime = { module = "io.kotest.extensions:kotest-assertions-kotlinx-datetime", version.ref = "kotest-extensions-assertionsKotlinxDatetime" }
+kotest-extensions-htmlreporter = { module = "io.kotest.extensions:kotest-extensions-htmlreporter", version.ref = "kotest" }
+kotest-extensions-junitxml = { module = "io.kotest.extensions:kotest-extensions-junitxml", version.ref = "kotest" }
+
+kotest-assertionsJson = { module = "io.kotest:kotest-assertions-json", version.ref = "kotest" }
+kotest-assertionsCore = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-runnerJunit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
+kotest-frameworkDatatest = { module = "io.kotest:kotest-framework-datatest", version.ref = "kotest" }
+
+### Mockserver Libraries ###
+mockserver-netty = { module = "org.mock-server:mockserver-netty", version.ref = "mockserver" }
+mockserver-clientJava = { module = "org.mock-server:mockserver-client-java", version.ref = "mockserver" }
+mockserver-springTestListener = { module = "org.mock-server:mockserver-spring-test-listener", version.ref = "mockserver" }
+mockserver-junitJupiter = { module = "org.mock-server:mockserver-junit-jupiter", version.ref = "mockserver" }
+mockserver-integrationTesting = { module = "org.mock-server:mockserver-integration-testing", version.ref = "mockserver" }
+mockserver-testing = { module = "org.mock-server:mockserver-testing", version.ref = "mockserver" }
+mockserver-core = { module = "org.mock-server:mockserver-core", version.ref = "mockserver" }
+
+
+## Plugin Libraries ##
+gradle-plugins-dokka = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "gradle-plugins-dokka" }
+gradle-plugins-spotless = { module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "gradle-plugins-spotless" }
+gradle-plugins-detekt = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "gradle-plugins-detekt" }
+gradle-plugins-shadow = { module = "gradle.plugin.com.github.johnrengelman:shadow", version.ref = "gradle-plugins-shadow" }
+
+gradle-plugins-spring-boot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "spring-boot" }
+
+gradle-plugins-kotlinx-benchmark = { module = "org.jetbrains.kotlinx:kotlinx-benchmark-plugin", version.ref = "gradle-plugins-kotlinx-benchmark" }
+gradle-plugins-kotlinx-kover = { module = "org.jetbrains.kotlinx:kover", version.ref = "gradle-plugins-kotlinx-kover" }
+gradle-plugins-ksp = { module = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin", version.ref = "gradle-plugins-ksp" }
+gradle-plugins-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
+gradle-plugins-kotlin-noarg = { module = "org.jetbrains.kotlin:kotlin-noarg", version.ref = "kotlin" }
+gradle-plugins-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+gradle-plugins-kotlin-pluginApi = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin-api", version.ref = "kotlin" }
+# GitHub Releases: https://github.com/gradle/kotlin-dsl/releases
+# Artifacts: https://repo.gradle.org/gradle/libs-releases-local/org/gradle/gradle-kotlin-dsl
+# TODO there's no later version that 6.1.1, even though Gradle is 6.9 / 7.x already.
+gradle-plugins-kotlin-gradleDsl = { module = "org.gradle:gradle-kotlin-dsl", version = "6.1.1" }
+# Artifacts: https://repo.gradle.org/ui/native/libs-releases-local/org/gradle/gradle-kotlin-dsl
+gradle-plugins-gradleKotlinDsl = { module = "org.gradle.kotlin:gradle-kotlin-dsl-plugins", version = "2.3.3" }
+
+
+## Specific Libraries ##
+# JSR 305: Annotations for Software Defect Detection
+# Documentation: https://jcp.org/en/jsr/detail?id=305
+# Artifacts: https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305
+annotations-jsr305 = { module = "com.google.code.findbugs:jsr305", version = "3.0.2" }
+# Documentation: https://www.jetbrains.com/help/idea/annotating-source-code.html
+# Repository: https://github.com/JetBrains/java-annotations
+# Artifacts: https://repo1.maven.org/maven2/org/jetbrains/annotations
+annotations-jetbrains = { module = "org.jetbrains:annotations", version = "23.0.0" }
+
+# Version history: https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
+# Changelog (Full): https://projects.eclipse.org/projects/technology.jgit
+# Changelog (Summary): https://wiki.eclipse.org/JGit/New_and_Noteworthy
+# Artifacts: https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit
+jgit = { module = "org.eclipse.jgit:org.eclipse.jgit", version = "6.3.0.202209071007-r" }
+
+# Version history: https://github.com/swiftzer/semver/releases
+# Artifacts: https://mvnrepository.com/artifact/net.swiftzer.semver/semver
+semver = { module = "net.swiftzer.semver:semver", version = "1.2.0" }
+
+
+# === BUNDLES BLOCK === #
+[bundles]
+
+## Standard Bundles ##
+jasperreports = ["jasperreports", "jasperreports-functions", "jasperreports-fonts", "jasperreports-annotationProcessors"]
+
+jackson = [
+    "jackson-core", "jackson-databind", "jackson-annotations",
+    "jackson-woodstox-core", "jackson-dataformat-xml",
+    "jackson-datatype-jdk8", "jackson-datatype-jsr310", "jackson-datatype-hibernate5",
+    "jackson-module-parameterNames", "jackson-module-kotlin"
+]
+
+log4jRuntime = ["log4j2-web", "log4j2-slf4jImpl", "log4j2-core", "log4j2-jul", "log4j2-api"]
+log4j = ["log4j2-jul", "log4j2-api"]
+
+groovy = ["groovy-core", "groovy-json", "groovy-nio"]
+
+
+## Kotlin Bundles ##
+kotest = [
+    "kotest-extensions-assertionsCompiler", "kotest-assertionsJson",
+    "kotest-extensions-assertionsKotlinxDatetime", "kotest-assertionsCore",
+    "kotest-runnerJunit5", "kotest-frameworkDatatest", "kotest-property"
+]
+arrow = ["arrow-optics", "arrow-fx-stm", "arrow-fx-coroutines", "arrow-core"]
+kotlin-base = [
+    "kotlin-reflect", "kotlin-stdlib", "kotlin-stdlib-jdk8",
+    "benasher44Uuid", "benasher44Uuid-jvm",
+    "kotlinLogging-jvm"
+]
+kotlin-scripting = ["kotlin-scripting-common", "kotlin-scripting-jvm", "kotlin-scripting-jvmHost"]
+kotlinx-coroutines = [
+    "kotlinx-coroutines-core", "kotlinx-coroutines-jdk8", "kotlinx-coroutines-jdk9",
+    "kotlinx-coroutines-reactor", "reactor-kotlin-extensions"
+]
+kotlin-testing = ["kotlin-testJunit5", "mockk"]
+
+
+
+# === PLUGINS BLOCK === #
+[plugins]
+callisto-base = { id = "tyrell.callisto.base", version.ref = "callisto" }
+callisto-kotlin = { id = "tyrell.callisto.kotlin", version.ref = "callisto" }
+callisto-kotlinLibrary = { id = "tyrell.callisto.kotlin-library", version.ref = "callisto" }
+
+ksp = { id = "com.google.devtools.ksp", version.ref = "gradle-plugins-ksp" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "gradle-plugins-dokka" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "gradle-plugins-detekt" }
+spotless = { id = "com.diffplug.gradle.spotless", version.ref = "gradle-plugins-spotless" }
+ktlint = { id = "ktlint", version.ref = "gradle-plugins-ktlint" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "gradle-plugins-shadow" }
+
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+
+kotlinx-binaryCompatibilityValidator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref ="gradle-plugins-binaryCompatibilityValidator" }
+kotlinx-atomicfu = { id = "kotlinx-atomicfu", version.ref = "gradle-plugins-atomicfu" }
+
+kotlin-benchmark = { id = "org.jetbrains.kotlin.benchmark", version.ref = "gradle-plugins-kotlinx-benchmark" }
+kotlin-kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "gradle-plugins-kotlinx-kover" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+kotlin-noarg = { id = "org.jetbrains.kotlin.plugin.noarg", version.ref = "kotlin" }

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+tyrell.callisto.blob.hibernate.autoconfigure.HibernateBlobServiceAutoConfiguration

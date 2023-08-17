@@ -1,0 +1,29 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Publish Gradle Artifacts" type="GradleRunConfiguration" factoryName="Gradle">
+    <ExternalSystemSettings>
+      <option name="executionName" />
+      <option name="externalProjectPath" value="$PROJECT_DIR$" />
+      <option name="externalSystemIdString" value="GRADLE" />
+      <option name="scriptParameters" value="" />
+      <option name="taskDescriptions">
+        <list />
+      </option>
+      <option name="taskNames">
+        <list>
+          <option value=":callisto-gradle:version-catalog:publish" />
+          <option value=":callisto-gradle:tyrell-conventions:publish" />
+          <option value=":callisto-gradle:plugins:base:publish" />
+          <option value=":callisto-gradle:plugins:java:publish" />
+          <option value=":callisto-gradle:plugins:java-library:publish" />
+          <option value=":callisto-gradle:plugins:kotlin:publish" />
+          <option value=":callisto-gradle:plugins:kotlin-library:publish" />
+        </list>
+      </option>
+      <option name="vmOptions" />
+    </ExternalSystemSettings>
+    <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+    <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+    <DebugAllEnabled>false</DebugAllEnabled>
+    <method v="2" />
+  </configuration>
+</component>
