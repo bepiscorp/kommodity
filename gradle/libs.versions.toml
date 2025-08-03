@@ -92,7 +92,7 @@ kotest = { strictly = "[5.3, 6.0[", prefer = "5.5.0" } # Test framework for Kotl
 
 ## Plugin Versions ##
 gradle-plugins-ksp = "1.7.10-1.0.6" # Kotlin Symbol Processing API | https://github.com/google/ksp
-gradle-plugins-dokka = { strictly = "[1.7, 1.8[", prefer = "1.7.10" } # Kotlin Documentation Engine | https://github.com/Kotlin/dokka
+gradle-plugins-dokka = "1.7.10" # Kotlin Documentation Engine | https://github.com/Kotlin/dokka
 gradle-plugins-ktlint = { strictly = "[0.46, 1.0[", prefer = "0.47.1" } # Kotlin Linter | https://github.com/pinterest/ktlint
 gradle-plugins-spotless = { strictly = "[6.9, 7.0[", prefer = "6.11.0" } # Formatting Plugins | https://github.com/diffplug/spotless/tree/main/plugin-gradle
 gradle-plugins-detekt = { strictly = "[1.21, 2.0[", prefer = "1.21.0" } # Static code analysis for Kotlin | https://github.com/detekt/detekt

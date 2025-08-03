@@ -34,5 +34,5 @@ public enum class AuditState(override val dbKey: String) : DbEnum {
      * Removed state.
      * Used to express such a resource that is marked for deletion.
      */
-    REMOVED("R");
+    REMOVED("R")
 }
