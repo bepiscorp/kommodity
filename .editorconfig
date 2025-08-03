@@ -382,7 +382,7 @@ ij_groovy_use_single_class_imports = true
 ij_groovy_wrap_chain_calls_after_dot = false
 
 [{*.gradle.kts,*.kt,*.kts,*.main.kts,*.space.kts}]
-disabled_rules = annotation,argument-list-wrapping,filename,import-ordering
+ktlint_disabled_rules = annotation,argument-list-wrapping,filename,import-ordering,no-semi,trailing-comma-on-declaration-site,max-line-length
 ij_continuation_indent_size = 4
 ij_kotlin_align_in_columns_case_branch = false
 ij_kotlin_allow_trailing_comma = true

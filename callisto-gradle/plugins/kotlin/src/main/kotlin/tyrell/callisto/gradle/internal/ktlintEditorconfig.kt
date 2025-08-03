@@ -2,7 +2,7 @@ package tyrell.callisto.gradle.internal
 
 internal val ktlintEditorConfig: Map<String, String> = mapOf(
     "max_line_length" to "120",
-    "disabled_rules" to "annotation,argument-list-wrapping,filename,import-ordering",
+    "disabled_rules" to "annotation,argument-list-wrapping,filename,import-ordering,no-semi,trailing-comma-on-declaration-site,max-line-length",
     "ij_continuation_indent_size" to "4",
     "ij_kotlin_align_in_columns_case_branch" to "false",
     "ij_kotlin_allow_trailing_comma" to "true",
